@@ -3,7 +3,7 @@
   hosts: all
   tasks:
   - name: stop the httpd service
-    service: name=httpd state=stoppped
+    service: name=httpd state=stopped
   - name: stop the firewalld service
     service: name=firewalld state=stopped
   - name: Close port 80
