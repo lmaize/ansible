@@ -3,5 +3,6 @@
   hosts: all
   tasks:
   - name: delete index file
-    file: /var/www/html/index.html
-    state: absent
+    file: 
+      path: /var/www/html/index.html
+      state: absent
