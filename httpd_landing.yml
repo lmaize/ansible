@@ -1,7 +1,7 @@
 ---
 - name: change landing page
-- hosts: all
-- tasks:
+  hosts: all
+  tasks:
   - name: Create Insight Landing Page 
     shell: |
       echo '
