@@ -1,6 +1,7 @@
 ---
 - name: Create Insight Landing Page 
-  shell: echo | '
+  shell: |
+    echo '
       <!DOCTYPE html>
       <html>
       <head> Welcome to the Insight HTTPD test page </head>
