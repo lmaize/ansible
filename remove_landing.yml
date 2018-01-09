@@ -1,0 +1,7 @@
+---
+- name: remove Insight landing page
+  hosts: all
+  tasks:
+  - name: delete index file
+    file: /var/www/html/index.html
+    state: absent
