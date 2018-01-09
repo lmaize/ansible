@@ -1,14 +1,16 @@
 ---
-- name: Create Insight Landing Page 
-  shell: |
-    echo '
-      <!DOCTYPE html>
-      <html>
-      <head> Welcome to the Insight HTTPD test page </head>
-      <body>
+- name: change landing page
+- hosts: all
+- tasks:
+  - name: Create Insight Landing Page 
+    shell: echo '
+        <!DOCTYPE html>
+        <html>
+        <head> Welcome to the Insight HTTPD test page </head>
+        <body>
 
-      <img src="https://i.lensdump.com/i/vUJhT.png" alt="vUJhT.png" border="0" />
+        <img src="https://i.lensdump.com/i/vUJhT.png" alt="vUJhT.png" border="0" />
 
-      </body>
-      </html>
-      ' >> /var/www/html/index.html
+        </body>
+        </html>
+        ' >> /var/www/html/index.html
