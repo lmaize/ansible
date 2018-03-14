@@ -14,7 +14,7 @@
     service: name=ovirt-guest-agent.service state=enabled
       
   - name: start qemu
-      service: name=qemu-guest-agent.service state=started
+    service: name=qemu-guest-agent.service state=started
   
   - name: enable qemu
     service: name=qemu-guest-agent.service state=enabled
