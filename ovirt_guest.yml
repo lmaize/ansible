@@ -3,8 +3,10 @@
   hosts: all
   tasks:
   - name: install ovirt guest agent
-    yum: name=ovirt-guest-agent-common
-  
+    yum: 
+      name: ovirt-guest-agent-common
+      state: present
+      
   - name: start guest agent
     service: name=ovirt-guest-agent.service state=started
    
