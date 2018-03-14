@@ -8,13 +8,21 @@
       state: present
       
   - name: start guest agent
-    service: name=ovirt-guest-agent.service state=started
+    service: 
+      name: ovirt-guest-agent.service 
+      state: started
    
   - name: enable guest agent
-    service: name=ovirt-guest-agent.service state=enabled
+    service: 
+      name: ovirt-guest-agent.service 
+      state: enabled
       
   - name: start qemu
-    service: name=qemu-guest-agent.service state=started
+    service: 
+      name: qemu-guest-agent.service 
+      state: started
   
   - name: enable qemu
-    service: name=qemu-guest-agent.service state=enabled
+    service: 
+      name: qemu-guest-agent.service 
+      state: enabled
