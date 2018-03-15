@@ -8,7 +8,8 @@
       state: present
     
   - name: start and enable goferd
-    service: goferd
+    service: 
+      name: goferd
       state: started
       enabled: yes
     
