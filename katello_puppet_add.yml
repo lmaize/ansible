@@ -4,22 +4,22 @@
   tasks:
   - name: download katello agent
     yum:
-    name: katello-agent
-    state: present
+      name: katello-agent
+      state: present
     
   - name: start and enable goferd
     service: goferd
-    state: started
-    enabled: yes
+      state: started
+      enabled: yes
     
   - name: download puppet agent
     yum:
-    name: puppet
-    state: present
+      name: puppet
+      state: present
     
   - name: start and enable puppet
     service:
-    name: puppet
-    state: started
-    enabled: yes
+      name: puppet
+      state: started
+      enabled: yes
     
