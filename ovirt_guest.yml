@@ -2,11 +2,6 @@
 - name: This installs guest agents on VM
   hosts: all
   tasks:
-  - name: add RHEL common repo
-    rhsm_repository: 
-      name: rhel-7-server-rh-common-rpms
-      state: enabled
-   
   - name: install ovirt guest agent
     yum: 
       name: ovirt-guest-agent-common
