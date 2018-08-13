@@ -4,10 +4,10 @@
   tasks:
   - name: stop the httpd service
     service: name=httpd state=stopped
-  - name: stop the firewalld service
-    service: name=firewalld state=stopped
   - name: Close port 80
     firewalld: service=http permanent=false state=disabled
+  - name: stop the firewalld service
+    service: name=firewalld state=stopped
   - name: remove the httpd rpm
     yum: name=httpd state=removed
   
