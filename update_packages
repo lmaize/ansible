@@ -4,6 +4,6 @@ hosts: all
 tasks: 
   - name: install latest packages
     yum:
-      name: '*"
+      name: '*'
       state: latest
 
