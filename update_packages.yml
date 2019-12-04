@@ -1,5 +1,4 @@
 ---
-name: ensure latest packages installed
 hosts: all
 tasks: 
   - name: install latest packages
