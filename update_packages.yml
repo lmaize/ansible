@@ -1,8 +1,8 @@
 ---
-hosts: all
-tasks: 
-  - name: install latest packages
-    yum:
-      name: '*'
-      state: latest
+- hosts: all
+  tasks: 
+    - name: install latest packages
+      yum:
+        name: '*'
+        state: latest
 
