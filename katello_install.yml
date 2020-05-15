@@ -1,0 +1,14 @@
+---
+- name: add Katello
+  hosts: all
+  tasks:
+  - name: download katello agent
+    yum:
+      name: katello-agent
+      state: present
+    
+  - name: start and enable goferd
+    service: 
+      name: goferd
+      state: started
+      enabled: yes
