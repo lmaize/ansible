@@ -1,9 +1,9 @@
 ---
-name: Install Insights
-hosts: all
-remote_user: root
+- name: Install Insights
+  hosts: all
+  remote_user: root
 
-tasks:
-- name: Register the insights client
-  insights_register:
-    state: present
+  tasks:
+  - name: Register the insights client
+    insights_register:
+      state: present
