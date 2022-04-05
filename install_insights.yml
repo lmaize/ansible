@@ -1,7 +1,6 @@
 ---
 - name: Install Insights
   hosts: all
-  remote_user: root
   tasks:
   - name: Register the insights client
     insights_register:
