@@ -5,7 +5,7 @@
   - name: Creating a file with content
     copy:
       dest: "/var/www/html/index.html"
-      content: 
+      content: |
       <!DOCTYPE html>
       <html>
       <head> Welcome to the HTTPD test page </head>
