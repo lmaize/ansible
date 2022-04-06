@@ -8,9 +8,9 @@
       content: |
         <!DOCTYPE html>
         <html>
-        <h1 style="font-size: 4rem"> Welcome to the HTTPD test page </h1>
+        
         <body>
-
+        <h1 style="font-size: 4rem"> Welcome to the HTTPD test page </h1>
         <a href="https://lensdump.com/i/raHq65"><img src="https://i2.lensdump.com/i/raHq65.md.jpg" alt="raHq65.md.jpg" border="0"></a>
 
         </body>
