@@ -2,9 +2,10 @@
 - name: change landing page
   hosts: all
   tasks:
-  - name: Create Landing Page 
-    shell: |
-      echo '
+  - name: Creating a file with content
+    copy:
+      dest: "/var/www/html/index.html"
+      content: 
       <!DOCTYPE html>
       <html>
       <head> Welcome to the HTTPD test page </head>
@@ -14,4 +15,4 @@
 
       </body>
       </html>
-      ' >> /var/www/html/index.html
+      
