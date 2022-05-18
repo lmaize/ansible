@@ -1,0 +1,6 @@
+---
+- name: Insights compliance
+  hosts: all
+  tasks:
+  - name: Initiate compliance scan
+    command: insights-client --compliance
