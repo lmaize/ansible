@@ -5,17 +5,15 @@
   - name: Install SCAP security guide
     yum:
       name: scap-security-guide
-      state: present
-      version: latest
-    
+      state: latest
+
   - name: Install openscap scanner
     yum: 
       name: openscap-scanner
-      state: present
-      version: latest
+      state: latest      
       
   - name: Install openscap 
     yum: 
       name: openscap
-      state: present
-      version: latest
+      state: latest
+     
