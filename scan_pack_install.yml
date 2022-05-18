@@ -1,0 +1,18 @@
+---
+- name: SCAP packages install
+  hosts: all
+  tasks:
+  - name: Install SCAP security guide
+    yum:
+      name: scap-security-guide
+      state: present
+    
+  - name: Install openscap scanner
+    service: 
+      name: openscap-scanner
+      state: present
+      
+  - name: Install openscap 
+    service: 
+      name: openscap
+      state: present
