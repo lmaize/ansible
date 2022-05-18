@@ -8,11 +8,11 @@
       state: present
     
   - name: Install openscap scanner
-    service: 
+    yum: 
       name: openscap-scanner
       state: present
       
   - name: Install openscap 
-    service: 
+    yum: 
       name: openscap
       state: present
