@@ -3,4 +3,5 @@
   hosts: all
   tasks:
   - name: Register the insights client
-    command: insights-client --register
+    insights_register:
+     state: present
