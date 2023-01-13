@@ -2,3 +2,4 @@
 collections:
   
 - netapp.ontap
+- redhat.insights
