@@ -1,5 +1,4 @@
 ---
 collections:
   
-- netapp.ontap
-- redhat.insights
+- insights
