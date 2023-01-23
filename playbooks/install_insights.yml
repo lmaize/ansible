@@ -2,7 +2,6 @@
 - name: install insights
   hosts: all
   tasks:
-
   - name: Register the insights client
     insights_register:
       state: present
