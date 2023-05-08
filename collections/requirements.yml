@@ -1,5 +1,6 @@
 ---
 collections:
 - f5networks.f5_modules
+- redhat.satellite
 
 
